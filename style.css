@@ -176,9 +176,6 @@ button:active {
     margin: auto;
 }
 
-
-
-
 /* ------------------------ Bill ------------------------------ */
 /* ------------------------ Result ------------------------------ */
 .result {
@@ -234,16 +231,85 @@ button:active {
 @media (max-width: 800px) {
     .app_box {
         flex-direction: column;
-        width: 25rem;
+        width: 26rem;
         height: 60rem;
     }
 
+    /* ------------------------ Bill ------------------------------ */
+
+.bill {
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+
+/* ------------------------ Bill ------------------------------ */
+
+/* ------------------------ Result ------------------------------ */
+.result {
+    background-color: hsl(183, 100%, 15%);
+    width: 24rem;
+    height: 24rem;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+.result_box {
+    padding: 2.5em;
     
+}
+
+.result_total {
+    display: block;
+    float: right;
+    transform: translate(-30%, -150%);
 }
 
 
 
+/* ------------------------ Result ------------------------------ */
+
+    
+/* ------------------------ Button styles ------------------------------ */
+
+.bill button {
+    font-family: 'Space Mono', monospace;
+    width: 10rem;
+    height: 3rem;
+    margin-top: .5em;
+    margin-left: .5em;
+}
+
+.result button {
+    margin-top: 1em;
+    padding: 1em 8em;
+}
 
 
+/* ------------------------ Button styles ------------------------------ */
 
+/* ------------------------ Input styles ------------------------------ */
+#custom_tip {
+width: 10rem;
+height: 3rem;
+margin-left: .5em;
+text-align: center;
+font-size: 1.4em;
+font-weight: 700;
+border-radius: 5px;
+border: 0;
+background-color: hsl(189, 41%, 97%);
+margin-bottom: 2em;
+}
+/* ------------------------ Input styles ------------------------------ */
+/* ------------------------ ERROR MESSAGE ------------------------------ */
+
+ .error span {
+     transform: translate(175%, -100%);
+ }
+ 
+ /* ------------------------ ERROR MESSAGE ------------------------------ */
+
+}
 /* ================================== MOBILE ============================= */
