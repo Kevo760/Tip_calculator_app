@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color:hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-size: 1em;
+}
+
+.logo {
+    display: block;
+    margin: 5em auto 5em auto;
+}
+
+
+.app_box {
+    display: flex;
+    width: 57.5rem;
+    height: 30rem;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+form {
+    margin-left: 1em;
+}
+
+/* ------------------------ Text styles ------------------------------ */
+
+
+
+p {
+    display: block;
+    font-weight: 700;
+}
+
+.bill p {
+    color: hsl(186, 14%, 43%);
+}
+
+.result p {
+    color: white;
+}
+
+.per_text {
+    color: hsl(185, 41%, 84%);
+    display: block;
+}
+
+.total_text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+
+/* ------------------------ Text styles ------------------------------ */
+
+/* ------------------------ Input styles ------------------------------ */
+
+#bill_total, #num_peps {
+    width: 92%;
+    padding: .5em;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    border: none;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+#bill_total {
+    background-image: url("/images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1rem;
+    margin-bottom: 2em;
+}
+
+#num_peps {
+    background-image: url("/images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1rem;
+}
+
+#custom_tip {
+width: 6.7rem;
+height: 3rem;
+margin-left: 0em;
+text-align: center;
+font-size: 1.4em;
+font-weight: 700;
+border-radius: 5px;
+border: 0;
+background-color: hsl(189, 41%, 97%);
+margin-bottom: 2em;
+}
+
+input {
+    text-align: right;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+}
+
+input:focus {
+outline-color:hsl(172, 67%, 45%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+
+/* ------------------------ Input styles ------------------------------ */
+
+/* ------------------------ Button styles ------------------------------ */
+
+.bill button {
+    font-family: 'Space Mono', monospace;
+    width: 6.7rem;
+    height: 3rem;
+    margin-top: .5em;
+    font-weight: 700;
+    font-size: 1.4em;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+.result button {
+    display: block;
+    margin: 5em auto;
+    padding: 1em 9em;
+    border-radius: 5px;
+    border: 0;
+    background-color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    font-size: 1em;
+    color:hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.result button:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+
+/* ------------------------ Button styles ------------------------------ */
+
+
+/* ------------------------ Bill ------------------------------ */
+
+.bill {
+    width: 26.25rem;
+    height: 26.25rem;
+    margin: auto;
+}
+
+
+
+
+/* ------------------------ Bill ------------------------------ */
+/* ------------------------ Result ------------------------------ */
+.result {
+    background-color: hsl(183, 100%, 15%);
+    width: 26.25rem;
+    height: 26.25rem;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+.result_box {
+    padding: 2.5em;
+    
+}
+
+.result_total {
+    display: block;
+    float: right;
+    transform: translate(-30%, -150%);
+}
+
+
+
+/* ------------------------ Result ------------------------------ */
+
+
+
+/* ------------------------ ERROR MESSAGE ------------------------------ */
+
+.bill span {
+   display: none;
+}
+
+.error #num_peps {
+    border: 2px solid red;
+}
+
+.error span {
+    position: absolute;
+    transform: translate(190%, -100%);
+    font-weight: 700;
+    color: red;
+    display: block;
+}
+
+/* ------------------------ ERROR MESSAGE ------------------------------ */
+
+
+
+/* ================================== MOBILE ============================= */
+
+@media (max-width: 800px) {
+    .app_box {
+        flex-direction: column;
+        width: 28rem;
+        height: 60rem;
+    }
+}
+
+
+
+
+
+
+/* ================================== MOBILE ============================= */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" >
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+<body>
+
+  <img src="/images/logo.svg" alt="splitter logo" class="logo">
+
+  <div class="app_box">
+
+    <div class="bill">
+
+
+  <form>
+
+  <p>Bill</p>
+  <input placeholder="0" type="number" id="bill_total">
+
+  <p>Select Tip %</p>
+
+  <button id="5percent">5%</button>
+  <button id="10percent">10%</button>
+  <button id="15percent">15%</button>
+  <button id="25percent">25%</button>
+  <button id="50percent">50%</button>
+  <input placeholder="Custom" type="number" id="custom_tip">
+
+  <p>Number of People</p>
+
+  <!--  ******** ERROR CLASS********  -->
+  <div class="zero">
+  <span>Can't be zero</span>
+  <input placeholder="0" type="number" id="num_peps">
+  </div>
+  </form>
+
+
+      </div>
+    
+    <div class="result">
+
+      <div class="result_box">
+        <p>Tip Amount</p>
+        <span class="per_text">/ person</span>
+        </div>
+      
+        <div class="result_total">
+          <span class="total_text">$0.00</span>
+        </div>
+
+        <div class="result_box">
+          <p>Total</p>
+          <span class="per_text">/ person</span>
+          </div>
+
+          <div class="result_total">
+          <span class="total_text">$0.00</span>
+          </div>
+      
+  <button id="reset">RESET</button>
+  
+      </div>
+
+  </div>
+</body>
+</html>
