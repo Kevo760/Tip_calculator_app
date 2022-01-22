@@ -1,22 +1,22 @@
-let billTotal = document.getElementById("bill_total").value;
+let billTotal = document.getElementById("bill_total");
 let numPeps = document.getElementById("num_peps");
 
 // Tips Section
-let fivePercent = document.getElementById("five_percent").value;
-let tenPercent = document.getElementById("ten_percent").value;
-let fifthteenPercent = document.getElementById("fifthteen_percent").value;
-let twentyFivePercent = document.getElementById("twenty_five_percent").value;
-let fiftyPercent = document.getElementById("fifty_percent").value;
-let customTip = document.getElementById("custom_tip").value;
+let fivePercent = document.getElementById("five_percent");
+let tenPercent = document.getElementById("ten_percent");
+let fifthteenPercent = document.getElementById("fifthteen_percent");
+let twentyFivePercent = document.getElementById("twenty_five_percent");
+let fiftyPercent = document.getElementById("fifty_percent");
+let customTip = document.getElementById("custom_tip");
+
+
 
 // Totals
 let tipAmount = document.getElementById("tip_amount");
 let totalAmount = document.getElementById("total_amount");
 
-// Tip amount
-let tipTotal = fivePercent * billTotal;
 
-
+// Reset button that resets bill, custom tip, and number of people
 function resetToZero() {
     billTotal.value = "";
     numPeps.value = "";
@@ -26,6 +26,8 @@ function resetToZero() {
     zero.classList.remove("error");
 }
 
+
+// Adds .error class on num of peeople
 function checkZero() {
     let zero = document.getElementById("zero");
     if (numPeps.value == 0) {
@@ -36,6 +38,7 @@ function checkZero() {
 }
 
 
+// When click on custom tip it deselects other tip radio button
 function otherTip(){
     a=document.getElementById('other');
     a.checked=true;
@@ -46,7 +49,27 @@ function otherTip(){
     a.value="";
     }
 
-console.log(tipTotal)
+
+
+
+// if bill equals != "" && num of peps !0 && tip
+
+
+let form = document.querySelector('input[type = radio]:checked').value;
+
+
+
+// TEST
+let test = document.getElementById("test");
+
+function testTip() {
+//    let convertTip = customTip.value * .01;
+//    let testTipv1 = convertTip * billTotal.value;
+//    return test.textContent=testTipv1.toFixed(2);
+return alert(form);
+}
+
+
 
 
 

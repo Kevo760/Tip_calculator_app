@@ -21,6 +21,8 @@
 
     <div class="bill">
 
+      <button id="test_button" onclick="testTip()">Calculate tip</button>
+      <b id="test">Total:</b>
 
   <form onkeyup="calculate()">
 
@@ -29,11 +31,11 @@
 
   <p>Select Tip %</p>
 
-  <input type="radio" name="tips" value=".05" id="five_percent" onClick="pickTip()"><label for="five_percent">5%</label>
-  <input type="radio" name="tips" value=".10" id="ten_percent" onClick="pickTip()"><label for="ten_percent">10%</label>
-  <input type="radio" name="tips" value=".15" id="fifthteen_percent" onClick="pickTip()"><label for="fifthteen_percent">15%</label>
-  <input type="radio" name="tips" value=".25" id="twenty_five_percent" onClick="pickTip()"><label for="twenty_five_percent">25%</label>
-  <input type="radio" name="tips" value=".50" id="fifty_percent" onClick="pickTip()"><label for="fifty_percent">50%</label>
+  <input type="radio" name="tips" value="5" id="five_percent" onClick="pickTip()"><label for="five_percent">5%</label>
+  <input type="radio" name="tips" value="10" id="ten_percent" onClick="pickTip()"><label for="ten_percent">10%</label>
+  <input type="radio" name="tips" value="15" id="fifthteen_percent" onClick="pickTip()"><label for="fifthteen_percent">15%</label>
+  <input type="radio" name="tips" value="25" id="twenty_five_percent" onClick="pickTip()"><label for="twenty_five_percent">25%</label>
+  <input type="radio" name="tips" value="50" id="fifty_percent" onClick="pickTip()"><label for="fifty_percent">50%</label>
   <label onClick="otherTip()" class="other_label"><input type="radio" name="tips" value="other" id="other">
   <input placeholder="Custom" type="number" id="custom_tip" name="tips"></label>
 
