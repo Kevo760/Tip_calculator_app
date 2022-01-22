@@ -36,6 +36,15 @@ function checkZero() {
 }
 
 
+function otherTip(){
+    a=document.getElementById('other');
+    a.checked=true;
+    }
+
+    function pickTip(){
+    a=document.getElementById('custom_tip');
+    a.value="";
+    }
 
 console.log(tipTotal)
 

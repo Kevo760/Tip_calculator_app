@@ -37,6 +37,7 @@ form {
 p {
     display: block;
     font-weight: 700;
+    margin-bottom: .5em;
 }
 
 .bill p {
@@ -122,21 +123,51 @@ input::-webkit-inner-spin-button {
 
 /* ------------------------ Input styles ------------------------------ */
 
-/* ------------------------ Button styles ------------------------------ */
 
-.bill button {
-    font-family: 'Space Mono', monospace;
+
+
+/* ################## TEST ############################# */
+
+
+input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+label {
+    display: inline-block;
     width: 6.7rem;
     height: 3rem;
-    margin-top: .5em;
+    margin-top: .3em;
+    padding-top: .3em;
     font-weight: 700;
     font-size: 1.4em;
     border-radius: 5px;
     border: 0;
     color: white;
     background-color: hsl(183, 100%, 15%);
-    cursor: pointer;
+    cursor: pointer; 
+    text-align: center;
 }
+
+input[type=radio]:checked + label{
+    background-color: hsl(172, 67%, 45%);
+  }
+
+
+.other_label {
+    background: none;
+    font-size: 1.1em;
+    transform: translate(0, 10%);
+    margin-bottom: 2.5em;
+}
+
+
+/* ################## TEST ############################# */
+
+
+/* ------------------------ Button styles ------------------------------ */
 
 
 button:hover {

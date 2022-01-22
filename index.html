@@ -29,12 +29,23 @@
 
   <p>Select Tip %</p>
 
+  <input type="radio" name="tips" value=".05" id="five_percent" onClick="pickTip()"><label for="five_percent">5%</label>
+  <input type="radio" name="tips" value=".10" id="ten_percent" onClick="pickTip()"><label for="ten_percent">10%</label>
+  <input type="radio" name="tips" value=".15" id="fifthteen_percent" onClick="pickTip()"><label for="fifthteen_percent">15%</label>
+  <input type="radio" name="tips" value=".25" id="twenty_five_percent" onClick="pickTip()"><label for="twenty_five_percent">25%</label>
+  <input type="radio" name="tips" value=".50" id="fifty_percent" onClick="pickTip()"><label for="fifty_percent">50%</label>
+  <label onClick="otherTip()" class="other_label"><input type="radio" name="tips" value="other" id="other">
+  <input placeholder="Custom" type="number" id="custom_tip" name="tips"></label>
+
+
+<!--  
   <button id="five_percent" value="0.05">5%</button>
   <button id="ten_percent" value="0.10">10%</button>
   <button id="fifthteen_percent" value="0.15">15%</button>
   <button id="twenty_five_percent" value="0.25">25%</button>
   <button id="fifty_percent" value="0.50">50%</button>
   <input placeholder="Custom" type="number" id="custom_tip">
+-->
 
   <p>Number of People</p>
 
