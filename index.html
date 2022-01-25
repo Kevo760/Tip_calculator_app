@@ -21,9 +21,6 @@
 
     <div class="bill">
 
-      <button id="test_button" onclick="testTip()">Calculate tip</button>
-      <b id="test">Total:</b>
-
   <form onkeyup="calculate()">
 
   <p>Bill</p>
@@ -31,12 +28,12 @@
 
   <p>Select Tip %</p>
 
-  <input type="radio" name="tips" value="5" id="five_percent" onClick="pickTip()"><label for="five_percent">5%</label>
-  <input type="radio" name="tips" value="10" id="ten_percent" onClick="pickTip()"><label for="ten_percent">10%</label>
-  <input type="radio" name="tips" value="15" id="fifthteen_percent" onClick="pickTip()"><label for="fifthteen_percent">15%</label>
-  <input type="radio" name="tips" value="25" id="twenty_five_percent" onClick="pickTip()"><label for="twenty_five_percent">25%</label>
-  <input type="radio" name="tips" value="50" id="fifty_percent" onClick="pickTip()"><label for="fifty_percent">50%</label>
-  <label onClick="otherTip()" class="other_label"><input type="radio" name="tips" value="other" id="other">
+  <input type="radio" name="tips" value="5" id="five_percent" checked onchange="radioChange()"><label for="five_percent">5%</label>
+  <input type="radio" name="tips" value="10" id="ten_percent" onchange="radioChange()" ><label for="ten_percent">10%</label>
+  <input type="radio" name="tips" value="15" id="fifthteen_percent" onchange="radioChange()"><label for="fifthteen_percent">15%</label>
+  <input type="radio" name="tips" value="25" id="twenty_five_percent" onchange="radioChange()"><label for="twenty_five_percent">25%</label>
+  <input type="radio" name="tips" value="50" id="fifty_percent" onchange="radioChange()"><label for="fifty_percent">50%</label>
+  <label onClick="otherTip()" class="other_label"><input type="radio" name="tips" id="other" >
   <input placeholder="Custom" type="number" id="custom_tip" name="tips"></label>
 
 
@@ -54,7 +51,7 @@
   <!--  ******** ERROR CLASS********  -->
   <div id="zero">
   <span>Can't be zero</span>
-  <input placeholder="0" type="number" id="num_peps" onchange="checkZero()">
+  <input placeholder="0" type="number" id="num_peps" onchange="checkZero()"> 
   </div>
   </form>
 

@@ -120,15 +120,6 @@ input::-webkit-inner-spin-button {
 
 
 
-
-/* ------------------------ Input styles ------------------------------ */
-
-
-
-
-/* ################## TEST ############################# */
-
-
 input[type=radio] {
     position: absolute;
     visibility: hidden;
@@ -164,8 +155,7 @@ input[type=radio]:checked + label{
 }
 
 
-/* ################## TEST ############################# */
-
+/* ------------------------ Input styles ------------------------------ */
 
 /* ------------------------ Button styles ------------------------------ */
 
@@ -282,9 +272,10 @@ button:active {
 .result {
     background-color: hsl(183, 100%, 15%);
     width: 24rem;
-    height: 24rem;
+    height: 26rem;
     margin: auto;
     border-radius: 10px;
+    margin-top: 4em;
 }
 
 
@@ -306,35 +297,29 @@ button:active {
     
 /* ------------------------ Button styles ------------------------------ */
 
-.bill button {
-    font-family: 'Space Mono', monospace;
-    width: 10rem;
-    height: 3rem;
-    margin-top: .5em;
-    margin-left: .5em;
-}
 
 .result button {
-    margin-top: 1em;
-    padding: 1em 8em;
+    margin: 1em auto;
 }
-
 
 /* ------------------------ Button styles ------------------------------ */
 
 /* ------------------------ Input styles ------------------------------ */
 #custom_tip {
-width: 10rem;
-height: 3rem;
-margin-left: .5em;
-text-align: center;
-font-size: 1.4em;
-font-weight: 700;
-border-radius: 5px;
-border: 0;
-background-color: hsl(189, 41%, 97%);
-margin-bottom: 2em;
-}
+    width: 10rem;
+    }
+    
+
+label {
+     width: 10rem;
+     margin-left: .5em;
+    }
+    
+    .other_label {
+        padding: 0;
+    }
+    
+
 /* ------------------------ Input styles ------------------------------ */
 /* ------------------------ ERROR MESSAGE ------------------------------ */
 
